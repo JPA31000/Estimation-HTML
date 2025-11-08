@@ -4,9 +4,10 @@
 
 # Run and deploy your AI Studio app
 
-This contains everything you need to run your app locally.
+This contains everything you need to run your app locally or deploy it online with GitHub Pages.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1s0oa5w-Gdv8evlyq_rLITVK01O_rsaBI
+> [!TIP]
+> Une fois le dépôt poussé sur GitHub, l'application est automatiquement construite et publiée grâce au workflow GitHub Pages fourni dans ce projet. Aucune étape manuelle supplémentaire n'est nécessaire au-delà de l'activation de Pages dans les paramètres du dépôt.
 
 ## Run Locally
 
@@ -18,3 +19,11 @@ View your app in AI Studio: https://ai.studio/apps/drive/1s0oa5w-Gdv8evlyq_rLITV
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+## Déployer en ligne (GitHub Pages)
+
+1. **Poussez** votre dépôt sur GitHub.
+2. **Activez GitHub Pages** : dans les paramètres du dépôt, section **Pages**, sélectionnez la source `GitHub Actions`.
+3. A chaque `git push` sur `main` (ou `master`), le workflow [`Deploy to GitHub Pages`](.github/workflows/deploy.yml) construit le projet (`npm run build`) puis publie automatiquement le contenu du dossier `dist/` sur Pages.
+
+L'application sera accessible via l'URL fournie par GitHub Pages (par exemple `https://<votre-utilisateur>.github.io/Estimation-HTML/`).
