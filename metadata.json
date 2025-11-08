@@ -1,0 +1,5 @@
+{
+  "name": "Coûts de Construction (Estimation) HTML",
+  "description": "Une application pour les architectes pour réaliser des estimations de coûts de construction en phase APS pour des maisons individuelles, des ERP et des immeubles de logements, avec des critères personnalisables et une exportation de rapport en PDF.",
+  "requestFramePermissions": []
+}
